@@ -1,3 +1,17 @@
+import b5 from "../images/b5.jpg"
+import skin_disess  from "../images/catigories/skindress/skin_disess.webp"
+import asadfia from "../images/catigories/skindress/asadfia.jpg"
+import alzaabe from "../images/catigories/skindress/alzaabe.jfif"
+import althaalbe from "../images/catigories/skindress/althaalbe.jfif"
+import skin1 from "../images/catigories/skin care/skin1.webp"
+import skin2 from "../images/catigories/skin care/skin2.webp"
+import skin3 from "../images/catigories/skin care/skin3.webp"
+import skin_and_buty from "../images/catigories/skin care/skin_and_buty.jpg"
+
+
+
+
+
 export const nav = [
   {
     id: 1,
@@ -28,134 +42,635 @@ export const nav = [
 export const category = [
   {
     id: 1,
-    category: "Life",
+    category: "أمراض جلدية",
     title: "Stay Calm And Surf",
-    cover: "../images/category/ca1.png",
+    cover: skin_disess,
+    to:"/skin_disess"
   },
   {
     id: 2,
-    category: "Fashion",
+    category: "البشرة والجمال",
     title: "Becoming a Dragonfly",
-    cover: "../images/category/ca2.png",
+    cover: skin_and_buty,
+    to:"/skin_and_buty"
+
+
   },
   {
     id: 3,
-    category: "Travel",
-    title: "There's always light at the end of the tunnel",
-    cover: "../images/category/ca3.png",
+    category: " البشرة و",
+    title: "Becoming a Dragonfly",
+    to:"/skin_disess"
+
   },
+
   {
     id: 4,
-    category: "Sport",
-    title: "Stay Calm And Surf",
-    cover: "../images/category/ca4.png",
-  },
-  {
-    id: 5,
-    category: "Fun",
-    title: "There's always light at the end of the tunnel",
-    cover: "../images/category/ca5.png",
-  },
-  {
-    id: 6,
-    category: "Health",
+    category: "البشرة ",
     title: "Becoming a Dragonfly",
-    cover: "../images/category/ca6.png",
-  },
-  {
-    id: 7,
-    category: "Business",
-    title: "Stay Calm And Surf",
-    cover: "../images/category/ca7.png",
-  },
-  {
-    id: 8,
-    category: "Technology",
-    title: "There's always light at the end of the tunnel",
-    cover: "../images/category/ca8.png",
+    to:"/skin_disess"
+
   },
 ]
 export const blog = [
+  // امراض  جلدية 
   {
     id: 1,
-    title: "POST NO.1 CONTAINING A YOUTUBE VIDEO",
-    desc: "Quisque at tellus nec magna viverra euismod. Maecenas lobortis, nisl et sodales blandit, neque mi ullamcorper eros, id efficitur ex velit in ante. Suspendisse elementum congue lacus quis gravida. Nunc eu hendrerit risus. Quisque blandit, orci non maximus vulputate, ligula ante ornare enim, ac interdum lorem leo varius mauris. Aliquam non sem vel orci malesuada sagittis. Vivamus id ullamcorper tellus. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et sapien a arcu feugiat mattis. Suspendisse sed magna quis turpis rhoncus venenatis.",
-    category: "Nature",
-    cover: "../images/blogs/b1.jpg",
+    title:"الثعلبة ",
+    content:[
+      {title: ": الثعلبة ",desc:"  حالة جلدية مناعية غير معدية، تسبب تساقط الشعر، وتظهر في صورة بقع دائرية أو بيضاوية خالية من الشعر في فروة الرأس أو أماكن أخرى بدون أي ندبات أو علامات، وهذا يعني أنه لا يوجد ضرر دائم لبصيلات الشعر عند معظم المصابين، وغالبًا ما ينمو الشعر في المناطق المصابة، وقد يستغرق نمو الشعر شهورًا، كما يمكن أن يحدث ذلك في أي عمر، لكن معظم المرضى يصابون بها خلال سنوات المراهقة والعشرينيات والثلاثينيات، وعندما تحدث الإصابة لدى الأطفال الذين تقل أعمارهم عن 10 سنوات، فإن أماكن الإصابة تصبح أكثر اتساعًا وتطورًا ",
+      },
+      {title: ": أنواع الثعلبة ",
+      ul:[
+        {item_title:"الثعلبة البقعية (الأكثر شيوعًا) ",item_content:"يكون تساقط الشعر على شكل بقعة واحدة أو أكثر من بقعة على فروة الرأس أو أجزاء أخرى من الجسم"},
+        {item_title:": الثعلبة التي تصيب اللحية",item_content:"  يكون فقدان الشعر على شكل بقع في منطقة اللحية."},
+        {item_title:": الثعلبة الكلية",item_content:" يكون فقدان الشعر في فروة الرأس بشكل كامل."},
+        {item_title:"الثعلبة الشاملة (نادر) ",item_content:" يحدث تساقط كامل أو شبه كامل للشعر في فروة الرأس والوجه وبقية الجسم "},
+      
+
+        {item_title:" ",item_content:" "},
+
+      
+      ]
+
+    },
+    {title: ": السبب ",desc:"يحدث عند مهاجمة الجهاز المناعي لبصيلات الشعر عن طريق الخطأ، مما يسبب فقدان الشعر. هناك عدة عوامل تؤدي إلى ظهور المرض، لكن السبب غير معروف حتى الآن"},
+    {title: ": الأشخاص المصابون بالثعلبة أكثر عرضة لما يلي ",desc:"",
+    ul:[
+    
+
+      {item_title:" ",item_content:"الإصابة بمرض آخر من أمراض المناعة الذاتية (مثل: التهاب الغدة الدرقية أو البهاق) "},
+      {item_title:" ",item_content:" الربو والحساسية، وخاصة الأكزيما وحمى القش (حساسية الأنف)"},
+      {item_title:" ",item_content:"التاريخ العائلي لإصابة أحد الأقارب بالثعلبة (خاصةً قبل الثلاثين) يزيد من خطر الإصابة بها "},
+
+
+    
+    ]
+  },
+
+  {title: ": الأعراض     ",desc:": فقدان الشعر هو أولى علاماتها، حيث يبدأ عادةً في فروة الرأس، وقد يحدث أيضًا في اللحية والحاجبين والرموش والذراعين أو الساقين، حيث قد تشمل ",
+  ul:[
+  
+
+    {item_content:" بقع صلعاء على نحو مفاجئ وتأخذ شكلاً مستديرًا أو بيضاويًّا"},
+    {item_content:" تكون البقع الصلعاء ذات ملمس ناعم وخالية من منابت الشعر"},
+    {item_content:"من الممكن أن تؤثر الثعلبة على أظافر اليدين أو القدمين، حيث تظهر في صورة خدوش، وبقع بيضاء، وخشونة، أو تفقد لمعانها، ونادرًا ما يحدث تغير بشكل الأظافر أو تتساقط "},
+
+  
+
+  
+  ]
+},
+{title: "متى تجب زيارة الطبيب؟ ",desc:"عند ملاحظة تساقط الشعر بشكل مفاجئ وظهور بقع الصلع، حيث إن فقدان الشعر المفاجئ يمكن أن يشير إلى حالة طبية تتطلب العلاج"},
+{title: "العلاج ",desc:"لا يوجد علاج نهائي لهذا المرض، حيث تعتمد نتيجة العلاج على استجابة جهاز المناعة، وغالبًا ما ينمو الشعر من تلقاء نفسه، إلا أن هنالك أدوية تساعد في الحدِّ من المرض والسيطرة عليه، حيث تساعد أيضًا في إعادة نمو الشعر بسرعة أكبر، "},
+{title: " ومن هذه الأدوية:",desc:"غالبًا ما يحصل المريض في كثير من الأحيان على أكثر من علاج للحصول على نتائج فعالة",ul:[
+  { item_title:"", item_content:"الكورتيكوستيرويدات: مضاد للالتهاب، حيث يكون في بعض الأحيان على شكل كريم، أو حقن موضعي، أو مرهم موضعي يُوضع على الجلد"},
+  { item_title:"", item_content:"حبوب الكورتيكوستيرويد: لا يتم وصفها بشكل روتيني؛ لما لها من آثار جانبية خطيرة"} ,
+  { item_title:"", item_content:"المينوكسيديل الموضعي لإعادة نمو الشعر"}
+ ]},
+{title: " الوقاية",desc:"لا يمكن منع الإصابة، لكن يمكن التحكم فيها باتباع الإرشادات الصحية"},
+
+
+
+
+{title: " ",desc:""},
+    {title: " ",desc:"",ul:[
+     { item_title:"", item_content:""}
+    ]},
+
+
+
+    ]
+    
+
+    
+   
+  
+    ,category: "أمراض جلدية",
+    cover: althaalbe,
+    date: "APRIL 05, 2018",
+  },
+
+
+  {
+    id: 2,
+    title:"مرض الصدفية",
+    content:[
+      {title: "الصدفية",desc:"هي مرض جلدي مزمن غير معدٍ، يُصيب الجلد، ويحدث بسبب زيادة في نشاط الجهاز المناعي في الجسم، فيسبب سرعة نمو خلايا الجلد، حيث إن من طبيعة الجلد أن يتجدد كل ٣- ٤ أسابيع، لكن في حالة الصدفية فإن هذه العملية تستغرق ٣- ٧ أيام تقريبًا، أي أن المصابين بالصدفية لديهم فرط إنتاج خلايا الجلد، مما ينتج عنه تراكم طبقات الجلد وظهور أعراض الصدفية. هذا ويمكن أن يُصاب بهذا النوع من المرض الجلدي الأطفال والمراهقون، ولكنه غالبًا يصيب البالغين.",ul:""},
+      {title: "أنواع الصدفية ",desc:" توجد عدة أنواع من الصدفية، وقد يصاب الأشخاص بنوع واحد أو نوعين معًا، أو قد يتغير نوعها وقد تتطور لتصبح نوعًا آخر أكثر شدة، وتشمل هذه الأنواع ما يلي:",
+      ul:[
+        {item_title:": الصدفية القشرية ",item_content:"هي أكثر أنواع الصدفية شيوعًا، وتسبب ظهور طبقات رقيقة وجافة وحمراء من الجلد، تكون مغطاة بقشور فضية، عادة ما تتطور البقع بشكل متماثل على الجسم وتميل إلى الظهور على فروة الرأس والجذع والأطراف، وخاصة المرفقين والركبتين."},
+        {item_title:": الصدفية النقطية",item_content:" ويصيب هذا النوع غالبًا الشباب والأطفال، وتتهيج غالبًا بسبب العدوى البكتيرية (مثل: عدوى البكتيريا العقدية التي تصيب الحلق)، وتظهر في منطقة الجذع والأطراف."},
+        {item_title:": الصدفية البثرية",item_content:"يتكون هذا النوع من فقاعات مليئة بالصديد (بثور) على سطح الجلد، وتظهر بأشكال مختلفة في مناطق مختلفة من الجسم، وعادة ما يصيب هذا النوع اليدين والقدمين، ويمكن أن تتشقق هذه البثور، مسببة شقوقًا مؤلمة في الجلد."},
+        {item_title:": الصدفية العكسية ",item_content:" تظهر على شكل بقع كبيرة وحمراء بالجلد، وتوجد في مناطق الثنيات بالجلد (مثل: الإبطين، الفخذين، تحت الثدي)، وتزداد الحالة سوءًا مع الاحتكاك والتعرق."},
+        {item_title:": صدفية محمرة للجلد (نادر)",item_content:": تتميز باحمرار الجلد المتقشر في معظم أنحاء الجسم، ويمكن أن تحدث بسبب حروق الشمس أو بعض الأدوية (مثل: الكورتيكوستيرويدات)، غالبًا ما تتطور عند الأشخاص المصابين بنوع مختلف من الصدفية التي لا يمكن السيطرة عليها، ويمكن أن تكون خطيرة."},
+        {item_title:": صدفية الأظافر",item_content:" يعاني بعض الأشخاص المصابين بالصدفية من مشكلات في الأظافر، تظهر في صورة حُفَرٍ صغيرة أو خدوش فوق سطح الأظافر. قد تتخذ الأظافر اللون البني الداكن أو قد تنفصل عن قاعدة الظفر. "},
+        {item_title:": التهاب المفاصل الصدفي ",item_content:"   يُصاب بعض الأشخاص الذين يعانون الصدفية بنوع من التهاب المفاصل، إذ تظهر هذه الالتهابات غالبًا في صورة ألم وتورم وتصلب في المفصل، خاصةً مفاصل الأصابع، أو الشعور بألم في الكاحل."} 
+
+      ]
+
+    },
+    
+
+    {title: " : السبب  ",desc:"   بالرغم من عدم وضوح المسبب الرئيسي للصدفية، فإن الجهاز المناعي والجينات لهما دور كبير في الإصابة بها.    ", },
+    {title: " : المهيجات  ",desc:": ممكن أن تتهيج الصدفية أو تزداد سوءًا نتيجة عدة عوامل، والتي قد تشمل ",
+    ul:[
+      {item_content:"  إصابة الجلد (مثل: جرح بالجلد أو حروق الشمس أو غير ذلك) "},
+      {item_content:" لضغوط النفسية."},
+      {item_content:"الإصابة بعدوى البكتيريا العقدية في الحلق"},
+      {item_content:" التدخين"},
+      {item_content:"استخدام بعض الأدوية (مثل: الليثيوم، بريدنيزون، وهيدروكسي كلوروكين)"},
+      {item_content:"تغيرات الطقس، خاصةً التعرض للبرد والجفاف"},
+
+
+
+    ]},
+
+    {title: " : الأعراض  ",desc:": تختلف أعراض الصدفية من شخص لآخر، ولكن هناك بعض الأعراض المشتركة",
+    ul:[
+      {item_content:" . ظهور طبقة حمراء سميكة من الجلد مغطاة بطبقة قشرية ذات لون فضي، وقد تسبب الحكة عادةً في المرفقين والركبتين وفروة الرأس والجذع وباطن القدمين"},
+      {item_content:" يمكن ملاحظة أظافر سميكة ومتعرجة"},
+      {item_content:" جفاف وتشقق بالجلد المصاب، مما يسبب الحكة أو النزيف"},
+      {item_content:'يعاني بعض المرضى من "التهاب المفاصل الصدفي"، ويتميز مصابوه بمفاصل متيبسة ومنتفخة ومؤلمة '},
+      
+
+
+
+    ]},
+    {title: " : متى تجب زيارة الطبيب؟:  ",
+    ul:[
+      {item_content:"عند الشعور بالألم وعدم الراحة"},
+      {item_content:" عند تأثر الأداء في المهام اليومية."},
+      {item_content:"عند ظهور مشكلات في المفاصل (مثل: ألم، انتفاخ، صعوبة في أداء المهام اليومية)"},
+      {item_content:'لم تتحسن الأعراض بالرغم من استخدام الأدوية'},
+      
+
+
+
+    ]},
+    {title: " : العلاج  ",desc:"  لا يوجد علاج يشفي تمامًا من الصدفية، لكن يتم استخدام بعض الأدوية للتحكم بالأعراض، والتي تختلف بحسب مدى تأثر الجلد وشدة الحالة والمنطقة المصابة بالصدفية. هذا ويتم تصنيف الأدوية إلى ٣ فئات  ",
+    ul:[
+      {item_content:" الأدوية الموضعية: مثل الكريمات والمراهم"  },
+      {item_content:" العلاج بالضوء: حيث يتم تعريض الجلد إلى نوع معين من الأشعة فوق البنفسجية"},
+      {item_content:" أدوية عن طريق الفم أو الحقن"},
+      {item_content:'يعاني بعض المرضى من "التهاب المفاصل الصدفي"، ويتميز مصابوه بمفاصل متيبسة ومنتفخة ومؤلمة '},
+      
+
+
+
+    ]},
+    {title: " : الوقاية  ",desc:"لا توجد وسيلة حاليًا تقي من الإصابة بالصدفية، لكن توجد إرشادات تساعد على التحكم بها، وتمنع تهيجها",},
+    
+    ]
+    
+
+    
+   
+  
+    ,category: "أمراض جلدية",
+    cover: asadfia,
+    date: "APRIL 05, 2018",
+  },
+
+
+  {
+    id: 3,
+    title:"الذئبة الحمراء",
+    content:[
+      {title: "الذئبة الحمراء",desc:"هي مرض مناعي ذاتي مزمن وغير معدٍ، يمكن أن يؤثر على أجزاء مختلفة من الجسم، ويحدث عندما يقوم الجهاز المناعي (الذي يساعد عادة على حماية الجسم من العدوى والأمراض)، بمهاجمة أنسجته الذاتية كما لو كانت أنسجة غريبة مما يسبب التهابًا، وفي بعض الحالات يسبب تلفًا دائمًا للأنسجة، فيؤثر بذلك على الجلد والمفاصل والقلب والرئة والكلى وخلايا الدم والدماغ",ul:""},
+    
+    
+
+    {title: " أنواع الذئبة الحمراء:  ",
+    ul:[
+      { item_title:": الذئبة الحمراء الجهازية",item_content:"  هي أكثر أنواع الذئبة شيوعًا، وتعد أحد أمراض المناعة الذاتية، وتؤثر غالبًا على معظم أعضاء الجسم المختلفة"},
+      { item_title:":  الذئبة الجلدية ",item_content:"هي نوع من الذئبة يصيب الجلد على شكل طفح جلدي، ويظهر عادةً في الأماكن التي يتعرض فيها الجلد لأشعة الشمس"},
+      { item_title:":الذئبة الناتجة عن الأدوية  ",item_content:"     حدث نتيجة لرد فعل مبالغ فيه تجاه استخدام بعض الأدوية، وتظهر الأعراض عادةً بعد 3 إلى 6 أشهر من بدء تناول الدواء، وتختفي بمجرد إيقاف الدواء"},
+      { item_title:":  الذئبة الوليدية ",item_content:"  هي نوع نادر يحدث عندما يكتسب الرضيع بشكل سلبي الأجسام المضادة الذاتية من الأم المصابة بمرض الذئبة الحمراء"},
+ 
+
+
+
+    ] },
+   
+
+   
+ 
+ 
+    {title: " : السبب  ",desc:"تحدث أمراض المناعة الذاتية عندما يهاجم الجهاز المناعي في الجسم أنسجته الخاصة، والسبب غير معروف، لكن بعض العوامل قد تؤدي إلى تحفيز جهاز المناعة، مما يسبب المرض، وتشمل هذه العوامل",   
+    ul:[
+      { item_title:"الجينات"},
+      { item_title:" البيئة (مثل: الالتهابات الفيروسية، وأشعة الشمس، وبعض الأدوية، والتدخين). "},
+      { item_title:"التأثيرات المناعية والالتهابية، وتعني أن الجسم قد لا يقوم بالتخلص من الخلايا التالفة بشكل طبيعي، مما يحفز جهاز المناعة فيقوم بمهاجمة الجسم. "  },
+    
+ 
+
+
+
+    ]},
+    {title: " : الفئات الأكثر عرضة للإصابة  ",  
+    ul:[
+      { item_content:"تصاب النساء به أكثر من الرجال، ومع ذلك يمكن لأي شخص أن يصاب به"},
+      { item_content:"  يحدث غالبًا لدى الأشخاص الذين تتراوح أعمارهم بين 15 و45 عامًا، ولكن يمكن أن يحدث في مرحلة الطفولة أو في وقت لاحق من الحياة "},
+      { item_content:"التاريخ العائلي للإصابة بالذئبة أو أي مرض من أمراض المناعة الذاتية الأخرى يزيد من فرض الإصابة به."  },
+
+ 
+
+
+
+    ]},
+    {title: " :الأعراض  ",  desc:"قد تظهر العلامات والأعراض فجأة أو قد تتطور ببطء وتكون خفيفة أو شديدة، ويمكن أن تكون مؤقتة أو دائمة، ويمر معظم المصابين بها بنوبات، حيث يعانون فترات من المرض التي تزداد وتسوء فيها الأعراض لفترة، ثم فترات أخرى تتحسن أو تختفي فيها الأعراض تمامًا، وتختلف العلامات والأعراض باختلاف أنظمة الجسم المتأثرة والتي تشمل: ",  
+    ul:[
+      { item_content:"  ألم وتصلب وتورم المفاصل"},
+      { item_content:"الارهاق الشديد"  },
+      { item_content:"الحمى"  },
+      { item_content:"آلام بالعضلات"  },
+      { item_content:"تغير بالوزن: إما بالزيادة وإما بالنقصان"  },
+      { item_content:"تساقط الشعر"  },
+      { item_content:"قروح في الفم والأنف"  },
+      { item_content:"طفح على الوجه (على شكل فراشة) أو في أماكن أخرى من الجسم"},
+      { item_content:"ألم في الصدر أو البطن."},
+      { item_content:"تورم الغدد، عادة في الرقبة أو الإبط أو الفخذ"},
+      { item_content:"ضعف وظائف الكلى"},
+      { item_content:"حساسية الشمس أو الضوء"},
+      { item_content:"التهاب أو جفاف في العين"},
+      { item_content:"الصداع وفقدان الذاكرة"},
+
+
+
+
+
+ 
+
+
+
+    ]},
+    
+
+    {title: " :نوبات الذئبة الحمراء  ",  desc:".هي الأوقات التي تزداد فيها الأعراض سوءًا، حيث قد تتم ملاحظة تورم وطفح جلدي في أسبوع واحد، ثم تختفي في الأسبوع التالي، تكون بعض النوبات خفيفة، لكن البعض الآخر قد يكون خطيرًا ويتطلب رعاية طبية غالبًا ما تكون لنوبات الذئبة علامات تحذيرية، وهو ما يجعل بالإمكان منع تلك النوبات أو جعلها أقل حدة عند اكتشاف العلامات التحذيرية والحصول على العلاج بسرعة، وتشمل تلك العلامات",  
+    ul:[
+      { item_content:"الشعور بالتعب أكثر من المعتاد."},
+      { item_content:"الشعور بالألم."},
+      { item_content:"ظهور طفح جلدي."},
+      { item_content:"ارتفاع درجة حرارة الجسم"},
+      { item_content:"ألم المعدة"},
+      { item_content:"صداع حاد"},
+      { item_content:"دوخة."},
+    
+
+
+
+
+
+ 
+
+
+
+    ]},
+    {title: " :تشمل المحفزات الشائعة للنوبة ما يلي ",  
+    ul:[
+      { item_content:"الإفراط في العمل وعدم أخذ راحة كافية"},
+    
+      { item_content:"العدوى"},
+      { item_content:"التوقف عن تناول أدوية الذئبة"},
+      { item_content:"بعض أنواع الأدوية الأخرى."}
+   
+    
+
+
+
+
+
+ 
+
+
+
+    ]},
+    {title: "متى تجب زيارة الطبيب؟",  
+    ul:[
+     
+    
+      { item_content:"عند ملاحظة أعراض الذئبة"},
+      { item_content:"عند الإصابة بطفح جلدي على شكل فراشة، فقد يكون ذلك أول علامة ملحوظة لمرض الذئبة الحمراء"},
+      { item_content:"عند ظهور علامات التحذير من النوبة."},
+    
+   
+    
+
+
+
+
+
+ 
+
+
+
+    ]},
+    {title: "  : المضاعفات",  
+    ul:[
+     
+    
+      { item_content:" مرض الشريان التاجي"},
+      { item_content:" هشاشة العظام"},
+      { item_content:" مشكلات في الكلى"},
+
+    
+   
+    
+
+
+
+
+
+ 
+
+
+
+    ]},
+
+    {title: "  : العلاج",desc:"لا يوجد علاج نهائي، لكن تغيير نمط الحياة وتناول أدوية معينة يمكن أن يساعد في السيطرة عليها. وتشمل هذه الأدوية",  
+    ul:[
+     
+    
+      { item_content:" مسكنات الألم"},
+      { item_content:" الأدوية المضادة للالتهابات غير الستيرويدية "},
+      { item_content:" الأدوية المثبطة للمناعة"},
+      { item_content:" الكورتيزون "},
+    
+
+    
+   
+    
+
+
+
+
+
+ 
+
+
+
+    ]},
+    {title: "  : الوقاية",desc:"لا توجد طريقة لمنع مرض الذئبة، لكن يمكن التقليل من الإصابة بها، وذلك بتجنب المحفزات (مثل: أشعة الشمس، التوتر، التدخين، قلة النوم وغيرها)"
+  },
+    
+    ]
+    
+
+    
+   
+  
+    ,category: "أمراض جلدية",
+    cover: alzaabe,
+    date: "APRIL 05, 2018",
+  },
+
+
+// البشرة والجمال 
+
+  {
+    id: 4,
+    title:" علاج انتفاخ تحت العين",
+    content:[
+      {title: " علاج انتفاخ تحت العين",desc:"تؤدي عدة عوامل إلى حدوث  انتفاخ تحت العين  ويعد أبرزها التقدم في العمر، حيث ينخفض مستوى الكولاجين في الجلد بمرور الوقت فيترهل الجفن السفلي وتتجمع الدهون في هذه المنطقة، علاوة على تراكم السوائل فيها. [2]" },
+      {title: " علاج الحالة المسببة لانتفاخ تحت العين",desc:"     تعد أول خطوة في علاج انتفاخ تحت العين هي تجنب العوامل التي قد تؤدي إلى حدوثه، مثل السهر أو كثرة النوم، وتناول الأطعمة المالحة، أو الإرهاق وغيرها. ويمكن الحساسيةعن طريق تناول الأدوية المضادة للحساسية."},
+      {title: "العلاجات الطبيعية  ",desc:"قد تساهم الطرق الطبيعية في علاج مشكلة انتفاخ تحت العين عن طريق تقليل التورم وتحسين مظهر منطقة حول العين، وتتضمن طرق  علاج انتفاخ تحت العين في المنزل ",ul:[
+        { item_title:"الكمادات الباردة", item_content:"تفيد  الكمادات الباردة علاج انتفاخ تحت العين والسواد عن طريق تقليل تدفق الدم إلى هذه المنطقة وتخفيف الالتهاب والتورم. [4] "},
+        { item_title:"كمادات الشاي", item_content:"يعد عمل كمادات باردة بأكياس الشاي من أبرز طرق  علاج انتفاخ تحت العين بالأعشاب الكافيين الموجود في الشاي على تضييق الأوعية الدموية ما يقلل من الانتفاخ والهالات السوداء. [6]"},
+       { item_title:"كريمات العيون", item_content:"قد تساهم بعض كريمات العيون في الحد من انتفاخ أسفل العين وتقليل ظهور الخطوط التعبيرية والتجاعيد، ويفضل اختيار أنواع الكريمات التي تحتوي على المواد الآتية: [4]"},
+       { item_title:"", item_content:"الريتينول."},
+       { item_title:"", item_content:"الكافيين."},
+       { item_title:"", item_content:"الببتيدات."},
+       { item_title:"", item_content:"مضادات الأكسدة."},
+
+
+
+     ] },
+     {title: " الإجراءات الطبية",desc:"قد لا تحقق العلاجات المنزلية النتائج المرجوة في تقليل انتفاخ أسفل العين، وربما لا يحبذ البعض الخضوع للجراحات التجميلية، وفي هذه الحالة تعد الإجراءات الطبية غير الجراحية خيارًا جيدًا لتحسين مظهر الجلد حول العين. [1][7]  تشمل طرق علاج انتفاخ تحت العين طبيًا ما يلي: ",ul:[
+      { item_title:"حقن الفيلر", item_content:"يساهم علاج انتفاخ تحت العين بالفيلر  في إخفاء مظهر الجيوب تحت الجفن السفلي من خلال جعل الخط الفاصل بين منطقة تحت العين والخد أكثر انسيابية، وذلك عن طريق حقن مادة هلامية تعمل بمثابة حشوة لملء الفاصل، ويعد حمض الهيالورونيك أشهر المواد المستخدمة. [8]علاوة على ذلك، يفيد الفيلر في إخفاء الظلال تحت العيون والهالات السوداء فيضفي مظهرًا أكثر حيوية وشبابًا. [8]بالرغم من فعالية الفيلر في إخفاء انتفاخ تحت العين، إلا أنه يعد حلًا مؤقتًا تستمر نتائجه من ثلاثة أشهر إلى سنة، ومن ثم يستدعي الأمر تجديده مرة أخرى. [7]"},
+      { item_title:"التقشير بالليزر", item_content:"تكمن فكرة  علاج انتفاخ تحت العين بالليزر في شد الجلد المترهل والحد من التجاعيد عن طريق إزالة الطبقات السطحية من الجلد في منطقة أسفل العين، ما يحفز إنتاج الكولاجين فيصبح الجلد أكثر قوة وتماسكًا الأمر الذي يساهم في شد الجفن والتقليل من مظهر انتفاخ تحت العين. [3][7]"},
+      { item_title:"التقشير الكيميائي", item_content:"  تستخدم الأحماض الطبيعية في إجراء عملية التقشير الكيميائي لعلاج انتفاخ تحت العين والتجاعيد"  },
+      { item_title:"الوخز بالإبر الدقيقة", item_content:"يساهم العلاج بالوخز بالإبر الدقيقة (بالإنجليزية: Microneedling) في الحد من مظهر الجيوب تحت العين وكذلك الخطوط الدقيقة والتجاعيد، ويتضمن هذا العلاج وخز البشرة بإبر دقيقة جدًا لتنشيط إنتاج الكولاجين والإيلاستين في الجلد ما يعزز مرونة الجلد ويحسن مظهره. [10]"},
+      { item_title:"البوتوكس", item_content:"ربما يفيد البوتوكس  أيضًا في تحسين مظهر انتفاخ تحت العين من خلال تقليل الخطوط التعبيرية والتجاعيد حول زوايا العين وتحسين المظهر العام لمنطقة العين. [7]جدير بالذكر أن حقن البوتوكس حول العين يقتصر على الزوايا الخارجية للعين؛ نظرًا لأن حقنه في الجفن السفلي قد يؤدي إلى ارتخاء الجفن وتدليه لأسفل. [7]"},
+      
+
+
+    ]},
+    {title: "العلاج الجراحي ",desc:"يعد علاج انتفاخ تحت العين جراحيًا من خلال إجراء جراحة شد الجفن السفلي (بالإنجليزية: Lower Eyelid Blepharoplasty) أفضل طريقة للتخلص من جيوب أسفل العين لا سيما عندما لا تجدي العلاجات الأخرى نفعًا، أو تعطي نتائج ضعيفة غير مرضية. [7]تعتمد فكرة الجراحة على إعادة توزيع الدهون المتراكمة تحت الجفن السفلي والتخلص من الدهون الزائدة فضلًا عن شد الجلد المترهل، وقد تجرى من خلال عمل شق خارجي في الجفن أو من الناحية الداخلية للجفن. [7]"},
+    {title: "كيفية الوقاية من انتفاخ تحت العين ",desc:"قد يساهم إجراء بعض التعديلات على نمط الحياة في الحفاظ على صحة الجلد والوقاية من الإصابة بانتفاخ تحت العين، وذلك عن طريق: [5]",ul:[
+      { item_title:"", item_content:"شرب كميات كافية من الماء يوميًا."},
+      { item_title:"", item_content:"ترطيب الجلد يوميًا خاصة منطقة تحت العين."},
+      { item_title:"", item_content:"وضع  واقي الشمس عند الخروج نهارًا."},
+      { item_title:"", item_content:"اتباع نظام غذائي صحي قليل الملح، وغني بالفواكه والخضراوات."},
+      { item_title:"", item_content:"الحفاظ على وزن مناسب."},
+      { item_title:"", item_content:"تجنب التدخين والامتناع عن شرب الكحول."},
+      
+
+
+     ]},
+
+      
+   
+
+   
+ 
+ 
+ 
+
+ 
+      {title: " ",desc:""},
+      {title: " ",desc:"",ul:[
+       { item_title:"", item_content:""},
+      ]},
+
+
+
+    
+    ]
+    
+
+    
+   
+  
+    ,category: "البشرة والجمال",
+    cover: skin1,
+    date: "APRIL 05, 2018",
+  },
+
+
+  {
+    id: 5,
+    title:" كيفية إزالة الجلد الميت",
+    content:[
+      {title:" كيفية إزالة الجلد الميت",desc:"تعد  إزالة الجلد الميت  خطوة هامة لتحسين مظهر البشرة ومنحها نضارة وحيوية وإضفاء النعومة عليها، فضلًا عن الحفاظ على صحتها. يساهم التخلص من الجلد الميت في تجنب تراكم الشوائب على الجلد وتعزيز عملية تجديد الخلايا، وتشمل طرق إزالة الجلد الميت من الجسم استخدام أدوات التقشير اليدوي أو المقشرات الطبيعية، وكذلك استعمال المقشرات الكيميائية. [1]"},
+      {title: " ",desc:"يتناول هذا المقال طرق إزالة الجلد الميت من الجسم، وكذلك التعليمات التي يجب اتباعها عند تقشير الجلد."},
+      {title: " إزالة الجلد الميت بطرق طبيعية ",desc:"تتعدد طرق  تقشير الجسم وإزالة الجلد الميت ، فيمكن استخدام اللوف أو فرشاة الجسم الجافة وغيرها، أو الاستعانة بمستحضرات التقشير الجاهزة أو تحضيرها في المنزل. [2] نذكر فيما يلي وصفات لإزالة الجلد الميت من الجسم"},
+      {title: " الشوفان وزيت جوز الهند",desc:"يعد الشوفان وزيت جوز الهند من الطرق الفعالة لتقشير الجسم وإزالة الجلد الميت، حيث يساهم فرك الشوفان على الجسم في التخلص من الجلد الجاف وتحفيز تجديد الخلايا فضلًا عن تأثيره المهدئ والملطف للبشرة. [3][4]",ul:[
+        { item_title:"", item_content:""},
+       ]},
+      {title: " ",desc:"تستخدم حبوب الشوفان أو دقيق الشوفان في عمل خلطة إزالة الجلد الميت، وتستعمل كالآتي: [3]",
+      ul:[
+        { item_title:"طحن كوب من الشوفان حتى يصبح ناعمًا.", item_content:""},
+       { item_title:"إضافة نصف كوب من زيت جوز الهند إلى الشوفان لتكوين عجينة، ويمكن استبداله بزيت الجوجوبا", item_content:""},
+       { item_title:"فرك المزيج على الجسم المبلل بلطف وبحركات دائرية.", item_content:""},
+       { item_title:"شطف الجسم جيدًا بالماء الفاتر.", item_content:""},
+
+       ]
+    },
+
+    {title: "ملح البحر وزيت الزيتون ",desc:" ملح البحر هو خيار رائع لإزالة الجلد الميت ويتميز بخصائصة المطهرة والمضادة للبكتيريا، ولكن ينصح باستخدام الملح المطحون ليصبح خفيفًا على البشرة. [5] "},
+    {title: "",desc:" يمكن تحضير وصفة إزالة الجلد الميت بالملح",ul:[
+      { item_title:"", item_content:"وضع نصف كوب من ملح البحر المطحون في وعاء"},
+      { item_title:"", item_content:"إضافة نصف كوب من زيت الزيتون أو زيت الجوجوبا أو جوز الهند إلى الملح"},
+      { item_title:"", item_content:"إضافة بضع نقاط من زيت عطري للخليط، مثل زيت اللافندر"},
+      { item_title:"", item_content:"فرك المزيج على الجسم المبلل بحركات دائرية للتقشير."},
+      { item_title:"", item_content:"شطف الجسم بماء فاتر، ثم وضع مرطب"},
+  
+
+
+     ]},
+     {title: "القهوة ",desc:"تتعدد فوائد القهوة للبشرة فمسحوقها الخشن يساعد في تقشير الجسم وإزالة الجلد الميت، كما أن محتواها من الكافيين يعزز الدورة الدموية في الجلد ويقلل السيلوليت، بل ويساهم في الوقاية من الشيخوخة الضوئية تتضمن خطوات تحضير خلطة القهوة والزيوت الطبيعية لإزالة الجلد الميت ما يلي: [1]",ul:[
+      { item_title:"", item_content:"وضع ثلاث ملاعق من القهوة المطحونة في إناء."},
+      { item_title:"", item_content:"إضافة ملعقة كبيرة من زيت طبيعي إلى القهوة، مثل زيت الزيتون أو زيت جوز الهند."},
+      { item_title:"", item_content:"إضافة ملعقة كبيرة من الماء إلى الخليط حتى الحصول على عجينة سميكة القوام."},
+      { item_title:"", item_content:"فرك مقشر القهوة على الجسم المبلل بلطف في حركات دائرية."},
+      { item_title:"", item_content:"شطف المقشر ووضع مرطب مناسب."},
+
+
+     ]},
+     
+     {title: "السكر البني والزيوت الطبيعية ",desc:"يعد السكر البني خيارًا مثاليًا لإزالة الجلد الميت فهو أقل خشونة من الملح ويناسب جميع أنواع البشرة، علاوة على أنه يعمل كمرطب طبيعي للجسم إذ يتميز بخصائصه الجاذبة للرطوبة من الهواء. [7]تُحضر خلطة السكر البني لإزالة الجلد الميت من الجسم كما يلي: [6]",ul:[
+      { item_title:"", item_content:"خلط كميات متساوية من السكر البني وزيت جوز الهند، أوزيت الزيتون ، أو الجوجوبا، أو زيت بذور العنب."},
+      { item_title:"", item_content:"إضافة بضع قطرات من زيت عطري إلى المزيج مثل زيت اللافندر"},
+      { item_title:"", item_content:"تدليك الجسم المبلل بالمزيج في حركات دائرية بلطف"},
+      { item_title:"", item_content:"ترك المزيج على الجسم 5 دقائق"},
+      { item_title:"", item_content:"شطف الجسم جيدًا ووضع مرطب"},
+     
+    ]},
+    {title: " إزالة الجلد الميت بالمقشرات الكيميائية",desc:"ينطوي إزالة الجلد الميت بالمقشرات الكيميائية على استخدام كريمات تحتوي على أحماض خفيفة تعمل على إذابة الجلد الميت، تتوفر هذه الكريمات في الصيدليات ويمكن استخدامها في المنزل بأمان، ومع ذلك ينصح باستشارة الطبيب قبل استعمالهاومن أمثلة الأحماض المستخدمة في التقشير الكيميائي ما يلي: [2][8]",ul:[
+      { item_title:"", item_content:"أحماض ألفا هيدروكسي"},
+      { item_title:"", item_content:"أحماض بيتا هيدروكسي."},
+      { item_title:"", item_content:"أحماض بولي هيدروكسي."},
+      
+
+     ]},
+
+     {title: " نصيحة الطبي",desc:"يفيد إزالة الجلد الميت باستعمال الوصفات الطبيعية في الحفاظ على صحة البشرة ومنحها نضارة وحيوية، ولكن ينصح بعدم الإفراط في تقشير الجلد، لتجنب الإصابة بجفاف الجلد وتهيجه أو حدوث شقوق وجروح به."},
+  
+
+      
+   
+
+   
+ 
+ 
+ 
+
+ 
+      {title: " ",desc:""},
+      {title: " ",desc:"",ul:[
+       { item_title:"", item_content:""},
+      ]},
+
+
+
+    
+    ]
+    
+
+    
+   
+  
+    ,category: "البشرة والجمال",
+    cover: skin2,
     date: "APRIL 05, 2018",
   },
 
   {
-    id: 2,
-    title: "JUPITER IS FULL OF WATERFALLS SO EARLY",
-    desc: "Vestibulum suscipit nibh sed odio pharetra, condimentum lacinia nisi varius. Ut ac ornare diam. Suspendisse vitae quam risus. Nulla ullamcorper libero justo, vitae dictum est efficitur id. Aenean et lacinia arcu. Sed non dolor id risus dapibus congue. Quisque tincidunt vitae tellus ut malesuada. Nulla eleifend nibh a maximus consectetur. Duis et mi porta, bibendum leo non, fermentum enim. Vivamus sed diam suscipit, ultricies ipsum sed, efficitur dui. Sed pharetra purus at iaculis vehicula. Fusce pellentesque placerat ante, id elementum dolor maximus sed. Aenean viverra at lectus quis vehicula. Aenean at arcu odio. Etiam mauris justo, cursus finibus aliquam eget, fermentum nec nulla. Sed finibus viverra magna non sagittis. Mauris fringilla augue vel quam rhoncus, in tempor enim lacinia. Donec nibh velit, scelerisque id neque sit amet, ornare consectetur sem. Donec convallis nec justo id consequat. Donec sem leo, pulvinar sit amet nisi a, mollis gravida est. Duis porttitor eleifend cursus. Vivamus ac dapibus dolor. Nullam leo tellus, rhoncus sit amet tempor vel, malesuada vel augue. Morbi laoreet sem eget tortor pulvinar mattis. Maecenas commodo ultricies orci, ut blandit urna accumsan sit amet. Ut a porttitor orci, maximus feugiat turpis. In eu sodales orci, et volutpat felis. Quisque orci quam, gravida at nulla tempor, vulputate pretium magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent congue, magna vitae interdum blandit, arcu mauris placerat nulla, sit amet rhoncus justo risus in neque.",
-    category: "Nature",
-    cover: "../images/blogs/b2.jpg",
-    date: "MARCH 15, 2018",
-  },
-  {
-    id: 3,
-    title: "START YOU CUP ON TABLE OF THAT",
-    desc: "Duis rutrum eu tortor et efficitur. Nulla ac consequat leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vestibulum mattis est eu volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae tristique nibh. Quisque vel lectus interdum lacus ultricies venenatis. In ex nisl, commodo vitae risus ac, efficitur imperdiet dolor. Maecenas dignissim luctus mi sit amet mollis. Maecenas sit amet bibendum dolor, a molestie tellus. Donec et varius risus. Duis tincidunt mi lorem, vitae luctus turpis rutrum sit amet. Aliquam aliquet malesuada odio, ut pellentesque nisi tempus in. Ut fermentum, augue id accumsan aliquet, dolor dui euismod elit, nec fringilla mi justo nec mauris. Duis tellus nisl, elementum et urna at, molestie condimentum eros. Sed mattis quis risus id tincidunt. Donec ultrices vestibulum vestibulum.",
-    category: "Sports",
-    cover: "../images/blogs/b3.jpg",
-    date: "MARCH 15, 2018",
-  },
-  {
-    id: 4,
-    title: "START YOU CUP ON TABLE OF THAT",
-    desc: "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.",
-    category: "Fashion",
-    cover: "../images/blogs/b4.jpg",
-    date: "February 20, 2018",
-  },
-  {
-    id: 5,
-    title: "SMART TYPE OF GAMING WITH CO-OP",
-    desc: "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.",
-    category: "Sports",
-    cover: "../images/blogs/b5.jpg",
-    date: "February 20, 2018",
-  },
-  {
     id: 6,
-    title: "TEACH YOUR DRAGON HOW TO FLY",
-    desc: "Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus. We don't want to overload you with hundreds of styles you don't want, or need. We give you a strong base to express your own creativity.",
-    category: "Fashion",
-    cover: "../images/blogs/b6.jpg",
-    date: "February 20, 2018",
-  },
-  {
-    id: 7,
-    title: "TEACH YOUR DRAGON HOW TO FLY",
-    desc: "Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus. We don't want to overload you with hundreds of styles you don't want, or need. We give you a strong base to express your own creativity.",
-    category: "Fashion",
-    cover: "../images/blogs/b7.jpg",
-    date: "February 20, 2018",
-  },
-  {
-    id: 8,
-    title: "TEACH YOUR DRAGON HOW TO FLY",
-    desc: "Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus. We don't want to overload you with hundreds of styles you don't want, or need. We give you a strong base to express your own creativity.",
-    category: "Fashion",
-    cover: "../images/blogs/b8.jpg",
-    date: "February 20, 2018",
-  },
-  {
-    id: 9,
-    title: "TEACH YOUR DRAGON HOW TO FLY",
-    desc: "Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus. We don't want to overload you with hundreds of styles you don't want, or need. We give you a strong base to express your own creativity.",
-    category: "Fashion",
-    cover: "../images/blogs/b9.jpg",
-    date: "February 20, 2018",
+    title:"   ترطيب الوجه",
+    content:[
+      {title: "  ترطيب الوجه",desc:"يعتبر الترطيب أحد الإجراءات المهمة ضمن روتين العناية بالبشرة، بما في ذلك منطقة الوجه. ومن الممكن أن يهتم البعض بموضوع ترطيب الوجه على وجه الخصوص، نظرًا لكونه منطقة حساسة ويجب الحذر عند وضع أي مواد أو منتجات من الممكن أن تتسبب بتهيجه."},
+      {title: " ",desc:"المقال التالي يناقش أهمية ترطيب الوجه، وكيفية الحفاظ على رطوبة الوجه والوقاية من جفافه، بالإضافة إلى كيفية اختيار كريم ترطيب للوجه، وغيرها من الأمور المتعلقة بهذا الموضوع."},
+      {title: "أهمية وفوائد ترطيب الوجه ",desc:"تكمن أهمية ترطيب الوجه بأنه يعمل على زيادة نسبة الماء في الطبقات الخارجية من الجلد، وهو ما يساهم بتخفيف حدوث الجفاف فيها الناجم عن الكثير من العوامل الداخلية والخارجية التي تتسبب بعدم قدرة الجلد على الاحتفاظ بالرطوبة الكافية. [1]"},
+      {title: " ",desc:"فاستخدام كريم ترطيب الوجه سيعمل على تزويد الجلد بالرطوبة الكافية أو سيعمل كحاجز يمنع فقدان الماء من البشرة، وبالتالي فهو يعزز من قدرة الجلد على الاحتفاظ بالماء المتواجد بداخله. [1]"},
+      {title: " ",desc:"كما يساعد ترطيب الوجه على التقليل من حدوث العديد من المشكلات المرتبطة بجفاف البشرة بما فيها التهيج، والتشققات، وحدوث الالتهابات والعدوى. ولهذا السبب، يجب الاهتمام بترطيب الوجه لكبار السن فهم الأكثر عرضة للإصابة بهذه المشكلات وخاصة العدوى. [1،2]"},
+      {title: " ",desc:"كما من الممكن أن يساعد استخدام كريم ترطيب الوجه بانتظام في الحفاظ على صحة البشرة وتقليل ظهور علامات الشيخوخة عليها، فهو يساعد في الحفاظ على مرونة الجلد التي من الممكن أن يتم فقدانها في حالة جفافه، كما أن بعض أنواعكريمات ترطيب الوجه تعمل على حماية البشرة من أضرار الأشعة فوق البنفسجية. [1-3]"},
+      {title: " هل يجب ترطيب الوجه المصاب بحب الشباب؟",desc:"نعم، فامتلاك الفرد لبشرة دهنية أو إصابته  بحب الشباب لا يعني بأنه لا يحتاج لترطيب وجهه، فالبشرة الدهنية أيضًا بحاجة للترطيب اليومي فهي معرضة للإصابة بالجفاف أيضًا. [3،4]"},
+      {title: " ",desc:"لكن، يجب الانتباه عند اختيار كريم لترطيب الوجه المصاب بحب الشباب أو في حال كانت البشرة من نوع الدهني، فمن الممكن أن تتسبب بعض أنواع المنتجات بتفاقم المشكلة وزيادة ظهور حب الشباب نظرًا لاحتوائها على الزيوت أو تسببها بانسداد مسامات البشرة. [3،4]"},
+      {title: " كيفية ترطيب الوجه",desc:"يمكن القيام بترطيب الوجه إما باستخدام منتجات الترطيب أو استخدام الخلطات الطبيعية المصنوعة في المنزل. بالإضافة إلى القيام بعدد من التغييرات في نمط الحياة. [1،5]"},
+      {title: " ",desc:"كما في بعض الأحيان يمكن أن يستخدم البعض الزيوت الطبيعية كمرطب للوجه. "},
+      {title: " ",desc:"ينصح دائمًا بترطيب الوجه باستخدام الكريم أو الخلطات بعد القيام بتنظيف الوجه باستخدام الماء والغسول، حيث أن ذلك يساعد في منع حدوث جفاف الوجه بعد غسله، كما أنه يزيد من فاعلية مرطب الوجه، فوضع المرطب على البشرة الرطبة يساعد في حبس الرطوبة بداخلها. [3]   "},
+      {title: " كم مرة يجب ترطيب الوجه في اليوم؟",desc:"ينصح دائمًا بترطيب الوجه مرتين يوميًا، المرة الأولى في الصباح الباكر بعد الاستيقاظ من النوم، والمرة الأخرى ليلًا قبل الذهاب إلى النوم. كما ينصح أيضًا، بوضع مرطب الوجه بعد القيام بالاستحمام، أو السباحة، أو ممارسة التمارين الرياضية. [1،3]"},
+      {title: " كيف يتم اختيار مرطب الوجه؟",desc:"يعتمد اختيار أفضل مرطب للوجهعلى عدة عوامل، والتي تتضمن:",
+    ul:[
+       { item_title:"", item_content:"المكونات"},
+      {title: " ",desc:"حيث ينصح عند اختيار كريم ترطيب الوجه باختيار الأنواع التي تحتوي على إحدى المكونات الفعالة التالية: [1،5]"},
+
+      ]},
+      
+     
+
+
+
+     
+   
+
+       
+
+      
+   
+
+   
+ 
+ 
+ 
+
+ 
+      {title: " ",desc:""},
+      {title: " ",desc:"",ul:[
+       { item_title:"", item_content:""},
+      ]},
+
+
+
+    
+    ]
+    
+
+    
+   
+  
+    ,category: "البشرة والجمال",
+    cover: skin3,
+    date: "APRIL 05, 2018",
   },
 
-  {
-    id: 10,
-    title: "TEACH YOUR DRAGON HOW TO FLY",
-    desc: "Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus. We don't want to overload you with hundreds of styles you don't want, or need. We give you a strong base to express your own creativity.",
-    category: "Fashion",
-    cover: "../images/blogs/b10.jpg",
-    date: "February 20, 2018",
-  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 ]
+
+
+
+
