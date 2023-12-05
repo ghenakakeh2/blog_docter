@@ -1,63 +1,75 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
-import  ff from "../../assets/images/b5.jpg"
+import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai"
+import { BsFacebook } from "react-icons/bs"
+import { RiInstagramFill } from "react-icons/ri"
+import Docter from "../../assets/images/docter.jpg"
 
 export default function Sidebar() {
   return (
-    <div className="sidebar w-[30%] bg-[#fff]">
+    <div className="sidebar w-full bg-[#fff]">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
+        <span className="sidebarTitle">نبذة مختصرة عني</span>
         <img
-          src={ff}
+          src={Docter}
           alt=""
         />
         <p>
-          Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-          amet ex esse.Sunt eu ut nostrud id quis proident.
+       اختصاصية في الأمراض الجلدية والزهرية من ألمانيا دكتوراة في الجراحة الجلدية والمعالجة بالليزر أستاذة في كلية الطب في جامعة حلب 
         </p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
+        <span className="sidebarTitle">خدماتي </span>
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Life">
-              Life
+              تجميل البشرة
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Music">
-              Music
+              إزالة الندبات 
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Sport">
-              Sport
+              إزالة الوشم
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Style">
-              Style
+              إزالة التجاعيد 
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Tech">
-              Tech
+              الوحمات الوعائية
             </Link>
           </li>
           <li className="sidebarListItem">
             <Link className="link" to="/posts?cat=Cinema">
-              Cinema
+              بلاسما
+            </Link>
+          </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+              بوتوكس
+            </Link>
+          </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+          فيلرز
             </Link>
           </li>
         </ul>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
+        <span className="sidebarTitle">تابعني</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fab fa-facebook-square"></i>
-          <i className="sidebarIcon fab fa-instagram-square"></i>
-          <i className="sidebarIcon fab fa-pinterest-square"></i>
-          <i className="sidebarIcon fab fa-twitter-square"></i>
+          <i className="sidebarIcon fab fa-facebook-square"> <BsFacebook className='icon w-5 h-5 cursor-pointer' /></i>
+          <i className="sidebarIcon fab fa-instagram-square"> <RiInstagramFill className='icon w-5 h-5 cursor-pointer' /></i>
+          <i className="sidebarIcon fab fa-pinterest-square"> <AiFillTwitterCircle className='icon w-5 h-5 cursor-pointer' /></i>
+          <i className="sidebarIcon fab fa-twitter-square"> <AiFillLinkedin className='icon w-5 h-5 cursor-pointer' /></i>
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import "./details.css"
 import "../../components/header/header.css"
-import img from "../../assets/images/b5.jpg"
 import { BsPencilSquare } from "react-icons/bs"
 import { AiOutlineDelete } from "react-icons/ai"
 import { useParams } from "react-router-dom"
 import { useEffect } from "react"
 import { blog } from "../../assets/data/data"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const DetailsPages = () => {
   const { id } = useParams()
@@ -18,9 +18,13 @@ export const DetailsPages = () => {
       setBlogs(blogs)
     }
   }, [])
-
+console.log(blogs)
   return (
     <>
+     <Helmet>
+        <title>{blogs == null ?  "": blogs.title}</title>
+        <meta  name="description" content={blogs == null ?  "": blogs.content[0].desc}/>
+      </Helmet>
    
       {blogs ? (
         <section className='singlePage'>
@@ -29,18 +33,11 @@ export const DetailsPages = () => {
               <img src={blogs.cover} alt='' />
             </div>
             <div className='right'>
-              <div className='buttons'>
-                <button className='button'>
-                  <BsPencilSquare />
-                </button>
-                <button className='button'>
-                  <AiOutlineDelete />
-                </button>
-              </div>
+            
            <div>
             {blogs.content.map((item) => {
               return(
-                <div className="py-5 text-right px-3">
+                <div key={item.id} className="py-5 text-right px-3">
                   <h1>{item.title}</h1>
                   <p>{item.desc}</p>
                   {item.ul && (

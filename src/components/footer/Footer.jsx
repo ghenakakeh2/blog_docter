@@ -9,7 +9,7 @@ export const Footer = () => {
       <footer className='boxItems mt-10 bg-[#fff] p-5'>
      
         <div className='container flex justify-between'>
-          <p>Cartsy Medicine - All right reserved - Design & Developed by RedQ, Inc</p>
+          <p>  - جميع الحقوق محفوظة - تصميم وتطوير بواسطة </p>
           <div className='social flex gap-2 '>
             <BsFacebook className='icon w-5 h-5 cursor-pointer' />
             <RiInstagramFill className='icon w-5 h-5 cursor-pointer' />

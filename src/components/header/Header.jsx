@@ -26,10 +26,7 @@ export const Header = () => {
               ))}
             </ul>
           </nav>
-          <div className='account flexCenter'>
-            user
-            {/* <User /> */}
-          </div>
+       
         </div>
       </header>
     </>

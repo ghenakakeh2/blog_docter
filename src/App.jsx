@@ -17,7 +17,7 @@ function App() {
 
 
   return (
-    <>
+    <div className=" w-full">
      <Router>
         <Header />
       
@@ -25,6 +25,7 @@ function App() {
 
           <Route exact path='/' element={<Home />}  > 
           {category.map((item) => {
+
             return (
               <Route path={item.to}  element= {<Card category={item.category} />} />
             )
@@ -32,17 +33,14 @@ function App() {
           }
           )}
 
-          {/* <Route path="card"  element= {<Card/>} /> */}
+        
           </Route>
-          {/* <Route exact path='/login' component={Login} />
-          <Route exact path='/register' component={Regsiter} /> */}
           <Route exact path='/details/:id' element={<DetailsPages />} />
-          {/* <Route exact path='/account' component={Account} />
-          <Route exact path='/create' component={Create} /> */}
+
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   )
 }
 
