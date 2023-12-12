@@ -35,9 +35,9 @@ console.log(blogs)
             <div className='right'>
             
            <div>
-            {blogs.content.map((item) => {
+            {blogs.content.map((item,index) => {
               return(
-                <div key={item.id} className="py-5 text-right px-3">
+                <div key={index} className="py-5 text-right px-3">
                   <h1>{item.title}</h1>
                   <p>{item.desc}</p>
                   {item.ul && (

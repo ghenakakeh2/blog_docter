@@ -26,22 +26,19 @@ import hair3 from "../images/catigories/hair/hair3.jfif"
 export const nav = [
   {
     id: 1,
-    text: "home",
+    title: "الصفحة الرئيسية",
     url: "/",
+   
   },
   {
     id: 2,
-    text: "about",
+    title: "حول",
     url: "/about",
   },
-  {
-    id: 4,
-    text: "blog",
-    url: "/blog",
-  },
+
   {
     id: 5,
-    text: "contact",
+    title: "تواصل معنا",
     url: "/contact",
   },
 ]
@@ -50,13 +47,15 @@ export const category = [
     id: 1,
     category: "أمراض جلدية",
     cover: skin_disess,
-    to:"/skin_disess"
+    to:"/skin_disess",
+
   },
   {
     id: 2,
     category: "البشرة والجمال",
     cover: skin_and_buty,
-    to:"/skin_and_buty"
+    to:"/skin_and_buty",
+  
 
 
   },
@@ -64,7 +63,8 @@ export const category = [
     id: 3,
     category: "كل ما يخص الشعر",
     cover: hair,
-    to:"/hair"
+    to:"/hair",
+
 
   },
 
